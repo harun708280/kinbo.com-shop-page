@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        text_col: 'rgb(33, 33, 33)',
+                        text_col2: 'rgb(115, 115, 115)',
+                        work1: 'rgb(231, 193, 211)',
+                        work2: 'rgb(239, 218, 110)',
+                        work3: 'rgb(164, 218, 195)',
+                        work4: 'rgb(119, 170, 234)',
+                        secondary:'rgb(28, 28, 28)',
+                    },
+                    backgroundImage: {
+                        form_img: "url('./image/bg.avif')",
+                        shop: "url('black-friday-sale-banner-design-with-shopping-trolly_1055-9167.avif')",
+                        
+                    },
+                    fontFamily: {
+                        font: ['Manrope'],
+                    },
+                },
+            },
+        }
+    </script>
+
+
+</head>
+<body>
+  <nav class=" text-text_col mx-auto fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a></a></li>
+                    <li>
+                        <a>pages</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl font-bold hover:bg-white"><span class="text-primary">কিনবো.</span>com </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-xl font-medium px-1">
+                <li><a class="hover:bg-primary">Home</a></li>
+                <li><a class="hover:bg-primary">About</a></li>
+                <li><a class="hover:bg-primary">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a id="see-cart" class="btn bg-primary hover:bg-primary text-xl font-bold flex justify-center space-x-4">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span class="h-7 w-7 rounded-full bg-white p-1 flex justify-center items-center" id="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Example of the next section with padding to prevent overlap -->
+
+
+    <div class="  mx-auto">
+      <div class="bg-shop  bg-no-repeat bg-cover relative">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="flex justify-center space-x-10 py-56">
+            <div class="">
+                <h1 class="text-7xl font-bold text-white">50% Discount</h1>
+               
+            </div>
+            
+        </div>
+     </div>
+    <!-- <div class="bg-shop  bg-no-repeat bg-cover relative">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="flex justify-center space-x-10 py-32">
+            <div class="">
+                <h1 class="text-7xl font-bold text-white">50% Discount</h1>
+                <button class="btn bg-primary text-white py-2 px-6 rounded-md">Shop Now</button>
+            </div>
+            
+        </div>
+    </div> -->
+
+    
+
+    <!-- Vegetbale -->
+ 
+    <div class="" id="show-home" >
+      <div class="w-11/12 mx-auto my-7 p-7  bg-[#F7F8F8]"  id="vegetable">
+        <div class=" flex justify-center">
+          <div class="badge bg-primary text-white text-2xl py-7 px-10 font-bold">Product</div>
+        </div>
+        <!-- All -->
+        <div class="grid grid-cols-4  mt-7 gap-4 " id="product-conteinar">
+           
+          
+        
+            
+            
+        </div>
+        <!-- <div class="flex justify-center mt-5  "id="more-vegetable-btn" >
+          <button class="flex items-center space-x-2 font-medium border-2 border-primary  px-4 py-2 rounded-md hover:bg-primary hover:text-white transition duration-300 text-xl" ><span>More Product Vegetable</span> <span><i class="fa-solid fa-arrow-right"></i></span></button>
+        </div> -->
+    </div>
+
+<!-- electronics -->
+    
+ </div>
+<div class="">
+  <footer class="footer bg-base-200 text-base-content p-10">
+    <aside>
+      <h1 class="text-5xl font-bold mt-10"><span class="text-primary">কিনবো.</span>com</h1>
+      <p>
+        ACME Industries Ltd.
+        <br />
+        Providing reliable tech since 1992
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
+</div>    
+
+
+
+    <div class="">
+      <dialog id="my_modal_1" class="modal flex justify-end items-start mt-9 mx-auto w-11/12 ">
+        <div class="modal-box">
+          <div class="">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  
+                  <th>Product</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="t-body">
+                <!-- row 1 -->
+                
+               
+              </tbody>
+              <!-- foot -->
+              
+            </table>
+            <div class="border-b-2 border-dashed my-3"></div>
+            <div class="flex justify-between text-xl font-bold">
+              <h1>Total Amount</h1>
+              <p><span id="total-amount">0</span>Taka</p>
+            </div>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-active btn-secondary">close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+<!-- More vegetable Product -->
+
+
+ 
+
+<script src="./utiliist.js"></script>
+<script src="./shop.js"></script>
+<script src="./prc.js"></script>
+</body>
+</html>
